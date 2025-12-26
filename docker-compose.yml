@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  framed-tv:
+    image: eddiegulled/framed-tv:latest
+    container_name: framed-tv
+    ports:
+      - "1507:1507"
+    restart: unless-stopped
